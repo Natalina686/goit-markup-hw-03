@@ -135,7 +135,10 @@ header {
 .hero-section {
   background-color: var(--cl-navy-blue);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-section-title {
@@ -156,11 +159,17 @@ header {
   letter-spacing: 0.04em;
   color: var(--cl-white);
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 5px;
+  border: 1px solid inherit;
+  min-width: 169px;
+  min-height: 56px;
 }
 
 .hero-section-button:hover,
 .hero-section-button:focus {
   background-color: var(--cl-ocean);
+  border: 1px solid inherit;
 }
 
 .benefits-title,
@@ -179,6 +188,7 @@ header {
   text-align: left;
   line-height: 1.2;
   font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .benefits-list {
@@ -188,7 +198,10 @@ header {
 }
 
 .benefits-item {
-  width: 264px;
+width: 264px;
+height: 104px;
+
+
 }
 
 .team-section-foto-title,
@@ -206,11 +219,20 @@ header {
 
 .team-section {
   background-color: var(--cl-cloud);
+  padding: auto;
 }
 
-/*.team-section-list {
-  background-color: #FFFFFF;
-}*/
+.team-section-title,
+.portfolio-title {
+  padding-bottom: 72px;
+}
+
+.team-section-list {
+  display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
 
 .team-section-foto-title {
   text-transform: capitalize;
@@ -218,11 +240,17 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--cl-navy-blue);
+  padding: 32px 16px 8px;
   
 }
 
 .team-section-item {
   background-color: var(--cl-white);
+border-radius: 0px 0px 4px 4px;
+
+box-shadow: 0px 1px 6px 0px #2E2F4214;
+
+
 }
 
 .team-section-foto-title {
@@ -235,10 +263,26 @@ header {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 .portfolio {
   background-color: var(--cl-white);
+}
+
+.portfolio-list {
+  display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-item {
+  width: calc(33.33% - 24px);
+  border-radius: 0px 0px 4px 4px;
+
+  box-shadow: 0px 1px 6px 0px #2E2F4214;
 }
 
 .portfolio-foto-title {
@@ -247,11 +291,14 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--cl-navy-blue);
+  padding: 32px 0px 8px 16px;
+
 }
 
 .foto-desc {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 0px 0px 32px 16px;
 }
 
 .white-logo,
@@ -263,8 +310,14 @@ footer {
   background-color: var(--cl-navy-blue);
 }
 
+.footer-subs {
+  padding: 100px 0;
+  width: 264px;
+}
+
 .footer-desc {
   line-height: 1.5;
   text-align: left;
   letter-spacing: 0.02em;
+  margin-top: 16px;
 }
