@@ -272,7 +272,7 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
 
 .portfolio-list {
   display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     flex-wrap: wrap; 
     gap: 24px;
     row-gap: 48px;
