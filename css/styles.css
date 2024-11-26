@@ -123,12 +123,30 @@ header {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0
+  padding: 24px 0;
 }
+
 
 .address-navi {
   font-style: normal;
-  
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-desc,
@@ -233,7 +251,7 @@ height: 104px;
 
 .team-section-title,
 .portfolio-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-section-list {
@@ -243,6 +261,10 @@ height: 104px;
     gap: 24px;
 }
 
+.team-chef-desc {
+  padding: 32px 0;
+}
+
 .team-section-foto-title {
   text-transform: capitalize;
   font-size: 20px;
@@ -250,7 +272,8 @@ height: 104px;
   letter-spacing: 0.02em;
   color: var(--cl-navy-blue);
   padding: 32px 16px 8px;
-  
+  text-align: center; 
+  margin-bottom: 8px;
 }
 
 .team-section-item {
