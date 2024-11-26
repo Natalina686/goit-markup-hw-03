@@ -139,19 +139,20 @@ header {
   font-style: normal;
 }
 
-.address-list a {
+/*.address-list a {
   display: flex;
-  gap: 40px;
-}
+  
+}*/
 
 .address-list {
   display: flex;
   list-style: none; 
   padding: 0; 
-  margin: 0; 
+  margin: 0;
+  gap: 40px; 
 }
 
-.address-list-item {
+/*.address-list-item {
   margin-right: 40px; 
 }
 
@@ -162,7 +163,7 @@ header {
 .address-list-item a {
   padding-top: 24px; 
   padding-bottom: 24px; 
-}
+}*/
 
 .visually-hidden {
   position: absolute;
