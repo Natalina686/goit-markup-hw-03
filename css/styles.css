@@ -130,7 +130,7 @@ header {
   padding: 24px 0;
 }
 
-.nav-list-item {
+.nav-list a {
   padding: 24px 0; 
 }
 
@@ -139,7 +139,7 @@ header {
   font-style: normal;
 }
 
-.address-navi .address-list {
+.address-list a {
   display: flex;
   gap: 40px;
 }
