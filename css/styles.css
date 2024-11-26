@@ -144,6 +144,26 @@ header {
   gap: 40px;
 }
 
+.address-list {
+  display: flex;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.address-list-item {
+  margin-right: 40px; 
+}
+
+.address-list-item:last-child {
+  margin-right: 0; 
+}
+
+.address-list-item a {
+  padding-top: 24px; 
+  padding-bottom: 24px; 
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -355,13 +375,13 @@ box-shadow: 0px 1px 6px 0px #2E2F4214;
 
 .footer-part {
   background-color: var(--cl-navy-blue);
-  
+  padding: 100px 0;
   
 }
 
 .footer-subs {
   width: 264px;
-  padding: 100px 0;
+  
   margin: 15px;
   
 }
