@@ -68,6 +68,8 @@ header {
   display: flex;
     margin: 0 auto;
     padding: 0 15px;
+    justify-content: space-between; 
+  align-items: center; 
 }
 
 .container {
@@ -77,16 +79,10 @@ header {
 }
 
 .header-nav {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-}
-
-.nav-list,
-.address-list {
-  display: flex;
-  gap: 40px;
+  
 }
 
 .origin-logo {
@@ -144,25 +140,40 @@ header {
   
 }
 
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-list, .address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item, .address-list-item {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+}
+
 .address-list {
   display: flex;
-  list-style: none; 
-  padding: 0; 
+  list-style: none;
+  padding: 0;
   margin: 0;
-  gap: 40px; 
+  gap: 40px;
 }
 
 .address-list-item {
-  margin-right: 40px; 
+  margin-right: 40px;
 }
 
 .address-list-item:last-child {
-  margin-right: 0; 
-}
-
-.address-list-item a {
-  padding-top: 24px; 
-  padding-bottom: 24px; 
+  margin-right: 0;
 }
 
 .visually-hidden {
